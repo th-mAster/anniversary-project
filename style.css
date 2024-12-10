@@ -46,6 +46,7 @@ body {
 }
 
 .message {
+    margin-top:15px;
     font-size: 1.5rem;
     color: #3e3e3e;
     margin-bottom: 20px;
@@ -76,6 +77,7 @@ button:active{
 }
 
 #page2 h2{
+    margin-top:15px;
     font-size: 35px;
     text-align: top;
 }
@@ -91,7 +93,7 @@ button:active{
 
 #page2 button{
     position: absolute;  /* Position the button relative to the ghost */
-    top: 95%;  /* Adjust top position to place button inside the ghost */
+    top: 105%;  /* Adjust top position to place button inside the ghost */
     left: 50%;  /* Adjust left position to center it horizontally */
     transform: translate(-50%, -50%);  /* Perfectly center the button */
     padding: 10px 20px;  /* Add padding for the button */
