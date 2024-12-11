@@ -68,7 +68,7 @@ html, body{
 }
 
 .message {
-    margin-top: 30px;
+    margin-top: 60px;
     position: relative;
     font-size: 1.5rem;
     color: #3e3e3e;
@@ -185,6 +185,7 @@ button:active{
     width: 202px;
     top: 8%;
     left: 16%;
+    margin-bottom:25px;
     
 }
 
