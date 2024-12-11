@@ -1,8 +1,3 @@
-@font-face{
-    font-family:"font";
-    src:"Font.ttf";
-}
-
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -101,13 +96,11 @@ button:active{
 }
 
 #page2 h2{
-    margin=top:30px
-    font-size: 25px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
 #page2 p{
-    font-family:"font";
     font-size: 25px;
 }
 
@@ -146,75 +139,6 @@ button:active{
     display: inline-block;
 }
 
-.kumku-button {
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-.kumku-button button{
-    margin-top: 20px;
-    position: absolute;
-    background-color: #e48eab;
-}
-
-#page3{
-    position: relative;
-}
-
-#page3 h1{
-    text-align: center;
-}
-
-#page3 #button1{
-    position: absolute;
-    padding: 204px;
-    margin-top: 60%;
-}
-
-#page3 #button2{
-    position: absolute;
-    margin-top: 30%;
-}
-
-#page4{
-    position: relative;
-}
-
-#page4 img{
-    position: absolute;
-    width: 202px;
-    top: 8%;
-    left: 16%;
-    margin-bottom:25px;
-}
-
-#page4 h1{
-    text-align: center;
-}
-
-#page4 #button1{
-    position: absolute;
-    padding: 204px;
-    margin-top: 60%;
-}
-
-#page4 #button2{
-    position: absolute;
-    margin-top: 30%;
-}
-
-.button3{
-    position: absolute;
-    padding: 150px;
-    margin-top: 150%;
-}
-
-#page2 .msg-container{
-    margin-top: 120px;
-    margin-bottom: 15px;
-}
-
 @media (max-width: 600px) {
     .message {
         font-size: 1.2rem;
@@ -237,7 +161,7 @@ button:active{
 
     #page2 h2 {
         font-size: 25px;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 5px;
     }
 
@@ -247,8 +171,13 @@ button:active{
     }
 
     #page2 img {
-        width: 62%;
+        width: 52%;
     }
+}
+
+#page2 .msg-container{
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 @keyframes ghostAnimation {
@@ -256,7 +185,6 @@ button:active{
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
-
 
 
 
