@@ -5,8 +5,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    overflow-y: scroll;  /* Ensure scroll is enabled */
+    min-height: 100%; /* Use min-height instead of height to avoid cutting off */
+    overflow: auto; /* Allow scrolling */
 }
 
 
@@ -24,10 +24,9 @@ html, body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100%;  /* Use height 100% instead of 100vh */
-    padding: 20px;
+    min-height: 100%; /* Ensure the page is large enough to fit content */
     box-sizing: border-box;
-    overflow: hidden;
+    padding: 20px;
 }
 
 
@@ -95,39 +94,6 @@ button:active{
     background-color: #e49cb4;
 }
 
-@media (max-width: 600px) {
-    .message {
-        font-size: 1.2rem;
-        margin-top: 10px;  /* Adjust margin if needed */
-    }
-
-    .ghost-animation {
-        width: 250px; /* Resize image */
-        height: 250px;
-    }
-
-    .ghost-animation img {
-        width: 100%;
-        height: auto;
-    }
-
-    button {
-        font-size: 14px;
-    }
-
-    #page2 h2 {
-        font-size: 25px;
-    }
-
-    #page2 p {
-        font-size: 20px;
-    }
-
-    #page2 img {
-        width: 80%;
-    }
-}
-
 #page2 h2{
     margin-top:45px;
     font-size: 35px;
@@ -173,6 +139,38 @@ button:active{
     display: inline-block;
 }
 
+@media (max-width: 600px) {
+    .message {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .ghost-animation {
+        width: 250px;  /* Resize image */
+        height: 250px;
+    }
+
+    .ghost-animation img {
+        width: 100%; /* Ensure the image fits the container */
+        height: auto;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    #page2 h2 {
+        font-size: 25px;
+    }
+
+    #page2 p {
+        font-size: 20px;
+    }
+
+    #page2 img {
+        width: 80%;
+    }
+}
 
 
 @keyframes ghostAnimation {
