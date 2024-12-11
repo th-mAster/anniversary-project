@@ -145,6 +145,61 @@ button:active{
     display: inline-block;
 }
 
+.kumku-button {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.kumku-button button{
+    margin-top: 20px;
+    position: absolute;
+    background-color: #e48eab;
+}
+
+#page3{
+    position: relative;
+}
+
+#page3 h1{
+    text-align: center;
+}
+
+#page3 #button1{
+    position: absolute;
+    padding: 204px;
+    margin-top: 60%;
+}
+
+#page4{
+    position: relative;
+}
+
+#page4 img{
+    position: absolute;
+    width: 202px;
+    top: 8%;
+    left: 16%;
+    
+}
+
+#page4 h1{
+    text-align: center;
+}
+
+#page4 #button1{
+    position: absolute;
+    padding: 204px;
+    margin-top: 60%;
+}
+
+.button3{
+    position: absolute;
+    padding: 150px;
+    margin-top: 150%;
+}
+
+
 @media (max-width: 600px) {
     .message {
         font-size: 1.2rem;
@@ -191,6 +246,7 @@ button:active{
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
+
 
 
 
