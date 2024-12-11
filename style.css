@@ -6,6 +6,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow-y:auto ;
+    overflow: scroll;
+}
+
+html, body{
+    margin: 0; /* Remove browser default margins */
+    padding: 0; /* Remove browser default padding */
+    height: 100%; /* Ensure the page spans the full viewport */
+    overflow-y: auto; /* Allow vertical scrolling */
+    box-sizing: border-box; /* Include padding and borders in height calculations */
 }
 
 .page {
@@ -14,6 +24,15 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-height: 100vh; /* Ensure the container is tall enough */
+    padding: 20px; /* Add space inside */
+    box-sizing: border-box; /* Include padding in height calculations */
+    min-height: 100vh; /* Make sure it covers the full viewport height */
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    overflow: visible; /* Ensure content is not clipped */
 }
 
 .hidden {
@@ -49,11 +68,14 @@ body {
 }
 
 .message {
-    margin-top:15px;
+    position: relative;
+    overflow: auto;
+    overflow-y: auto;
+    margin-top:25px;
     font-size: 1.5rem;
     color: #3e3e3e;
     margin-bottom: 20px;
-
+    overflow: visible;
 }
 
 button {
@@ -79,8 +101,19 @@ button:active{
     background-color: #e49cb4;
 }
 
+@media (max-width: 600px) {
+    .message {
+      font-size: 1.5rem; /* Smaller font size for small screens */
+    }
+  
+    .ghost {
+      width: 120px; /* Resize ghost */
+      height: 120px;
+    }
+  }
+
 #page2 h2{
-    margin-top:15px;
+    margin-top:45px;
     font-size: 35px;
     text-align: top;
 }
@@ -90,13 +123,15 @@ button:active{
 }
 
 #page2 img{
+    position: relative;
     width: 60%;  /* Make the ghost image fill the container */
     height: auto;  /* Maintain aspect ratio */
 }
 
 #page2 button{
+    overflow-y: auto;
     position: absolute;  /* Position the button relative to the ghost */
-    top: 95%;  /* Adjust top position to place button inside the ghost */
+    top: 83%;  /* Adjust top position to place button inside the ghost */
     left: 50%;  /* Adjust left position to center it horizontally */
     transform: translate(-50%, -50%);  /* Perfectly center the button */
     padding: 10px 20px;  /* Add padding for the button */
@@ -116,6 +151,13 @@ button:active{
 #page2 button:active{
     background-color: #e49cb4;
 }
+
+#page2 .image-container{
+    position: relative;
+    display: inline-block;
+}
+
+
 
 @keyframes ghostAnimation {
     0% { transform: translateY(0); }
