@@ -171,6 +171,11 @@ button:active{
     margin-top: 60%;
 }
 
+#page3 #button2{
+    position: absolute;
+    margin-top: 30%;
+}
+
 #page4{
     position: relative;
 }
@@ -191,6 +196,11 @@ button:active{
     position: absolute;
     padding: 204px;
     margin-top: 60%;
+}
+
+#page4 #button2{
+    position: absolute;
+    margin-top: 30%;
 }
 
 .button3{
