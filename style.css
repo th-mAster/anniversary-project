@@ -1,3 +1,8 @@
+@font-face{
+    font-family:"font";
+    src:"Font.ttf";
+}
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -101,6 +106,7 @@ button:active{
 }
 
 #page2 p{
+    font-family:"font";
     font-size: 25px;
 }
 
