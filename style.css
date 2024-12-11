@@ -63,6 +63,7 @@ html, body{
 }
 
 .message {
+    margin-top: 30px;
     position: relative;
     font-size: 1.5rem;
     color: #3e3e3e;
@@ -95,9 +96,8 @@ button:active{
 }
 
 #page2 h2{
-    margin-top:45px;
     font-size: 35px;
-    text-align: top;
+    margin-bottom: 10px;
 }
 
 #page2 p{
@@ -172,6 +172,10 @@ button:active{
     }
 }
 
+#page2 .msg-container{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
 
 @keyframes ghostAnimation {
     0% { transform: translateY(0); }
