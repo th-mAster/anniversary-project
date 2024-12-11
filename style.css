@@ -212,6 +212,15 @@ button:active{
 #page2 .msg-container{
     margin-top: 30px;
     margin-bottom: 15px;
+    position:relative;
+    top:1%;
+}
+
+#page2 .msg-container h2{
+    position:absolute;
+}
+
+#page2 .msg-container p{
     position:absolute;
 }
 
