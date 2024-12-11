@@ -161,14 +161,17 @@ button:active{
 
     #page2 h2 {
         font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
 
     #page2 p {
         font-size: 20px;
+        margin-bottom: 5px;
     }
 
     #page2 img {
-        width: 80%;
+        width: 52%;
     }
 }
 
