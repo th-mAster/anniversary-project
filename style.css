@@ -6,9 +6,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow-y:auto ;
-    overflow: scroll;
+    overflow: hidden;
 }
+
 
 html, body{
     margin: 0; /* Remove browser default margins */
@@ -24,16 +24,12 @@ html, body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 100vh; /* Ensure the container is tall enough */
-    padding: 20px; /* Add space inside */
-    box-sizing: border-box; /* Include padding in height calculations */
-    min-height: 100vh; /* Make sure it covers the full viewport height */
-    display: flex; /* Use Flexbox for layout */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    overflow: visible; /* Ensure content is not clipped */
+    height: 100vh; /* Instead of min-height */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent overflow */
 }
+
 
 .hidden {
     display: none;
@@ -103,14 +99,23 @@ button:active{
 
 @media (max-width: 600px) {
     .message {
-      font-size: 1.5rem; /* Smaller font size for small screens */
+        font-size: 1.2rem; /* Adjust font size for small screens */
     }
-  
-    .ghost {
-      width: 120px; /* Resize ghost */
-      height: 120px;
+
+    .ghost-animation {
+        width: 250px;  /* Resize ghost animation */
+        height: 250px;
     }
-  }
+
+    .ghost-animation img {
+        width: 80%; /* Adjust image size to fit the container */
+    }
+
+    button {
+        font-size: 14px;  /* Make button text smaller on small screens */
+    }
+}
+
 
 #page2 h2{
     margin-top:45px;
