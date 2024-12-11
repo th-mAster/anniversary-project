@@ -101,6 +101,7 @@ button:active{
 }
 
 #page2 h2{
+    margin=top:30px
     font-size: 25px;
     margin-bottom: 10px;
 }
@@ -210,18 +211,8 @@ button:active{
 }
 
 #page2 .msg-container{
-    margin-top: 30px;
+    margin-top: 120px;
     margin-bottom: 15px;
-    position:relative;
-    top:1%;
-}
-
-#page2 .msg-container h2{
-    position:absolute;
-}
-
-#page2 .msg-container p{
-    position:absolute;
 }
 
 @media (max-width: 600px) {
