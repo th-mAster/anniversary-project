@@ -1,30 +1,38 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    box-sizing: border-box;
-}
-
 body {
+    margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #aa83bd;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: auto;
+    height: 100vh;
+    overflow-y:auto ;
+    overflow: scroll;
+}
+
+html, body{
+    margin: 0; /* Remove browser default margins */
+    padding: 0; /* Remove browser default padding */
+    height: 100%; /* Ensure the page spans the full viewport */
+    overflow-y: auto; /* Allow vertical scrolling */
+    box-sizing: border-box; /* Include padding and borders in height calculations */
 }
 
 .page {
-    min-height: 100vh; /* Ensure each page is at least the height of the viewport */
-    padding: 20px; /* Add padding to avoid elements being cut off */
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    overflow-y: auto; /* Ensure scrollability */
+    min-height: 100vh; /* Ensure the container is tall enough */
+    padding: 20px; /* Add space inside */
+    box-sizing: border-box; /* Include padding in height calculations */
+    min-height: 100vh; /* Make sure it covers the full viewport height */
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    overflow: visible; /* Ensure content is not clipped */
 }
 
 .hidden {
@@ -46,7 +54,6 @@ body {
     height: 300px; /* Set the height of the ghost (or adjust based on your image size) */
     margin: auto;
 }
-
 .ghost-animation img {
     width: 100%;  /* Make the ghost image fill the container */
     height: auto;  /* Maintain aspect ratio */
@@ -62,10 +69,13 @@ body {
 
 .message {
     position: relative;
-    margin-top: 25px;
+    overflow: auto;
+    overflow-y: auto;
+    margin-top:25px;
     font-size: 1.5rem;
     color: #3e3e3e;
     margin-bottom: 20px;
+    overflow: visible;
 }
 
 button {
@@ -83,43 +93,43 @@ button {
     z-index: 1;  /* Ensure the button is on top of the ghost image */
 }
 
-button:hover {
+button:hover{
     background-color: #dd7899;
 }
 
-button:active {
+button:active{
     background-color: #e49cb4;
 }
 
 @media (max-width: 600px) {
     .message {
-        font-size: 1.5rem; /* Smaller font size for small screens */
+      font-size: 1.5rem; /* Smaller font size for small screens */
     }
-
+  
     .ghost {
-        width: 120px; /* Resize ghost */
-        height: 120px;
+      width: 120px; /* Resize ghost */
+      height: 120px;
     }
-}
+  }
 
-#page2 h2 {
-    margin-top: 45px;
+#page2 h2{
+    margin-top:45px;
     font-size: 35px;
     text-align: top;
 }
 
-#page2 p {
-    margin-top: -10px;
+#page2 p{
     font-size: 25px;
 }
 
-#page2 img {
+#page2 img{
     position: relative;
     width: 60%;  /* Make the ghost image fill the container */
     height: auto;  /* Maintain aspect ratio */
 }
 
-#page2 button {
+#page2 button{
+    overflow-y: auto;
     position: absolute;  /* Position the button relative to the ghost */
     top: 83%;  /* Adjust top position to place button inside the ghost */
     left: 50%;  /* Adjust left position to center it horizontally */
@@ -134,21 +144,26 @@ button:active {
     z-index: 1;  /* Ensure the button is on top of the ghost image */
 }
 
-#page2 button:hover {
+#page2 button:hover{
     background-color: #dd7899;
 }
 
-#page2 button:active {
+#page2 button:active{
     background-color: #e49cb4;
 }
 
-#page2 .image-container {
+#page2 .image-container{
     position: relative;
     display: inline-block;
 }
+
+
 
 @keyframes ghostAnimation {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
+
+
+
